@@ -34,6 +34,7 @@ const File = ({file}) => {
 	if (view === 'plate') {
 		return (
 			<div className='file-plate'
+			     title={file.name}
 			     style={file.type === 'dir' ? {cursor: 'pointer'} : null}
 			     onClick={() => openDirHandler()}
 			>

@@ -81,10 +81,10 @@ const Disk = () => {
 							className="fa-solid fa-arrow-left"/></button>}
 					<div className="disk_btns_container">
 						<button className='disk_create' onClick={() => showPopupHandler()}><i
-							className="fa-solid fa-folder-plus"/></button>
+							className="fa-solid fa-folder-plus" title='Create folder'/></button>
 						<div className="disk_upload">
 							<label htmlFor="disk_upload-input" className="disk_upload-label"><i
-								className="fa-solid fa-file-arrow-up"/></label>
+								className="fa-solid fa-file-arrow-up" title='Upload file'/></label>
 							<input multiple={true} onChange={(event) => fileUploadHandler(event)} type="file"
 							       id="disk_upload-input" className="disk_upload-input"/>
 						</div>
